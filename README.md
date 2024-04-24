@@ -20,6 +20,7 @@ You can goto the path below to see the raw bitmap.
 > ArduinoBongoCatOLED/raw_image/
 
 You can also to edit it with your own preference in the link below:
+
 https://www.pixilart.com/art/simplebongocat-sr222e59bfe8aaws3
 
 ### Connection
