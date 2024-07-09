@@ -45,7 +45,6 @@ void setup() {
 }
  
 void loop() {
-  // Read the button
   leftBtnState = digitalRead(leftBtn);
   rightBtnState = digitalRead(rightBtn);
 
@@ -58,17 +57,13 @@ void loop() {
   display.clearDisplay();
 
   // if both button cliecked, draw both
-  if(leftBtnState == LOW && rightBtnState == LOW)
-  {
+  if (leftBtnState == LOW && rightBtnState == LOW) {
     display.drawBitmap(0, 0, bongoCat_bothBtn, 128, 64, WHITE);
-  }else if(leftBtnState == LOW)
-  {
+  } else if(leftBtnState == LOW) {
     display.drawBitmap(0, 0, bongoCat_leftBtn, 128, 64, WHITE);
-  }else if(rightBtnState == LOW)
-  {
+  } else if(rightBtnState == LOW) {
     display.drawBitmap(0, 0, bongoCat_rightBtn, 128, 64, WHITE);
-  }else
-  {
+  } else {
     display.drawBitmap(0, 0, bongoCat_idle, 128, 64, WHITE);
   }
 
